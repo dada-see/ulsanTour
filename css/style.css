@@ -72,9 +72,8 @@
 }
 .h_side form{
     position: relative;
-    width: 0;
-    height: 35px;
-    padding: 5px 50px 5px 0;
+    width: 50px;
+    height: 50px;
     border-radius: 20px;
     border: 1px solid transparent;
     transition: 1s;
@@ -84,7 +83,11 @@
     border: 1px solid #ddd;
 }
 .h_side form input{
+    position: absolute;
+    right: 50px;
+    top: 0;
     width: 0;
+    padding: 10px 0;
     border: 0;
     outline: none;
     background: none;
@@ -94,10 +97,7 @@
     transition: .4s;
 }
 .h_side form:hover > input{
-    position: absolute;
-    right: 70px;
-    top: 7px;
-    width: 210px;
+    width: 190px;
     transition: 1s;
 }
 .h_side input::placeholder{
@@ -109,15 +109,18 @@
 }
 .h_side form button{
     position: absolute;
-    right: 10px;
-    top: 3px;
+    right: 5px;
+    top: 5px;
     width: 40px;
     height: 40px;
     background-image: url(../img/ico_header_serach.png);
+    background-size: 40px auto;
     background-position: center;
     text-indent: -99999px;
 }
-
+.h_menu{
+    width: 45px;
+}
 .h_menu a{
     display: inline-block;
     width: 40px;
